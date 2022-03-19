@@ -10,6 +10,7 @@ public class linearBacktrackingRecursion {
 		System.out.print("enter the number upto you want to print = ");
 		int num = sc.nextInt();
 		linear(num,num);
+		sc.close();
 	}
 	public static void linear(int start,int end)
 	{

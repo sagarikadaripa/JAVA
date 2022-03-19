@@ -12,6 +12,7 @@ public class linearPrintRecursion {
 		System.out.print("enter the number upto you want to print = ");
 		int num = sc.nextInt();
 		linear(1,num);
+		sc.close();
 	}
 	
 	public static void linear(int start,int end)
