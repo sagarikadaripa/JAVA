@@ -13,7 +13,7 @@ package JavaPatterns;
 public class floydsTriangle {
     public static void main(String[] args){
 
-        int n = 10;
+        int n = 10; //number of rows input 
         int count = 1;
 
         for(int i = 1;i<=n;i++){
