@@ -18,7 +18,7 @@ public class numPattern {
                 System.out.print(" ");    //spaces before numbers
             }
             for(int j = 1; j<= i; j++){
-                System.out.print(i + "  ") ; //printing numbers
+                System.out.print(i + " ") ; //printing numbers
             }
             System.out.println();
         }
