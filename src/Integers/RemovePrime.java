@@ -23,7 +23,7 @@ public class RemovePrime {
     
     public static void main(String[] args){
         int n = 5;
-        ArrayList<Integer> arr = new ArrayList<Integer>(n); //Creating an Array List to store integers
+        ArrayList<Integer> arr = new ArrayList<Integer>(n); //Creating an Array List to store integers and numbers
         arr.add(24);
         arr.add(21);
         arr.add(17);
