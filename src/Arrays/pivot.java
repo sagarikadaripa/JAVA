@@ -26,6 +26,7 @@ public class pivot {
         /* If no equilibrium index found, then return 0 */
         return -1;
     }
+    //my approach 
     public int pivotIndex(int[] nums) {
         
         int pivot = 0,i;
