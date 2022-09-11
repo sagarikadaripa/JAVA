@@ -1,24 +1,32 @@
 package Arrays;
 
 public class office {
-    public static void main (String[] args) {
-        Test t=new Test();
-      t.fun();
-      System.out.print(Test.a+Test.b);
+    public static void main(String[] args) {
+        // System.out.print(isEven(0));
+        int arr[] = { 9, 8, 10, 8, 10, 19, 18 };
+        int ans = lastIndex(arr, 8);
+        System.out.println(ans);
     }
-}
-class Test{
-    static int a = 10; 
-    int b = 20; 
-    static void fun1() 
-    { 
-        a = 20;                             //Line 1
-        b = 10;                             //Line 2
-        fun2();                             //Line 3
-        System.out.print(this.b);           //Line 4
-    } 
-    void fun2() 
-    {     
-        System.out.println("from m2"); 
+
+    public static boolean isEven(int n) {
+        return n % 2 == 0;
+    }
+
+    public static int lastIndex(int arr[], int k) {
+        int store = -1;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == k)
+                store = i;
+        }
+        return store;
+    }
+
+    public static int lastIndex(int arr[], int k, int start) {
+        if (start == arr.length)
+            return start;
+        if (arr[start] == k) {
+            int store = start;
+        }
+        return lastIndex(arr, k, start + 1);
     }
 }
