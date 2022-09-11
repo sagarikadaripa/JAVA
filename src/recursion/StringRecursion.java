@@ -15,7 +15,25 @@ public class StringRecursion {
         }
     }
 
+    public static String removeX(String input) {
+
+        if (input.length() == 0)
+            return input;
+
+        String smallString = removeX(input.substring(1));
+        if (input.charAt(0) == 'x') {
+            return input.replace("x", "");
+        } else {
+            return input.charAt(0) + smallString;
+        }
+    }
+
+    // public static String removePi(String input) {
+
+    // }
+
     public static void main(String[] args) {
         System.out.println(characterReplace("Sagarika", 'a', 'y'));
+        System.out.println(removeX("axbxcxdefx"));
     }
 }
